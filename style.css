@@ -2,5 +2,27 @@
 FONT-AWESOME
 BOOTSTARP
 */
+
 @import url('../node_modules/font-awesome/css/font-awesome.min.css');
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+span {
+    font-size: 30px;
+}
+
+.myclear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type="text"]{
+    border:1px solid #ced4da;
+    /* border-bottom: 3px solid transparent; */
+}
+
+input[type="text"]:focus{
+    box-shadow: none;
+    background-color: transparent;
+    border:1px solid #ced4da;
+}
+
