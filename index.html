@@ -13,24 +13,69 @@
             <h2 class="d-inline-block">BookLook</h2>
             <i class="fa fa-eye fa-2x"></i>
             <div class="dropdown-divider"></div>
-            
-            <div id="book" class="mb-3">
+
+            <div id="book" class="mb-2">
                 <!-- <h1 id="title"></h1>
                 <p id="description"></p>
                 <h3 id="author">Written By:</h3>
                 <img id="image" src="" alt=""> -->
+                <ul class="list-group">
+                </ul>
+
+                <div class="d-inline-block" style="margin: 0 auto;">
+                    <img src="Eclipse-1s-200px.gif" class="cla" style="display: none;">
+                </div>
+
+                <div class="modal" id="popup-book" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex flex-row">
+                                <h1 class="modal-title"></h1>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="myclear">
+                                    <img class="img-thumbnail float-left mr-3" src="" alt="">
+                                    <h4 style="font-size: 20px;"></h4>
+                                </div>
+                                <h3 class="display-4">
+                                    <span class="display-4"></span>
+                                </h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
-        <div class="forum-group">
-            <h5>Search By ISBN</h5>
-            <input type="text" class="form-control" placeholder="ISBN Number">
-            <button type="submit" class="btn mt-3 btn-primary active">Search</button>
-        </div>
+        <div class="forum-group container">
+            <h5>Search By:</h5>
+            <div class="row">
+                <div class="col-sm-8">
+                    <input type="text" class="form-control d-inline-block" placeholder="Book">
+                    <button type="submit" class="btn mt-3 btn-primary active">Search</button>
+                </div>
+                <div class="col-sm-4">
+                    <select class="custom-select">
+                        <option selected>search By</option>
+                        <option value="1">Author Name</option>
+                        <option value="2">Title</option>
+                        <option value="3">ISBN</option>
+                    </select>
+                </div>
 
+
+            </div>
+        </div>
     </div>
 
+
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 
